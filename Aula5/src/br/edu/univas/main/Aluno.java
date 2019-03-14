@@ -1,18 +1,24 @@
 package br.edu.univas.main;
 
+import java.util.ArrayList;
+
 public class Aluno {
 
 	private String name;
 	
 	private String email;
 	
-	private Disciplina disciplinas;
+	private ArrayList<Disciplina> disciplinas;
 	
 	public String printData() {
 		String result = "Name: " + this.name +
-						"\nE-mail: " + this.email + 
-						"\nDisciplina: " + this.disciplinas.getName() +
-						"\nProfessor: " + this.disciplinas.getTeacher();
+						"\nE-mail: " + this.email;
+		
+		for (int i = 0; i < this.disciplinas.size(); i++) {
+			Disciplina disciplina = this.disciplinas.get(i);
+			result += "\nDisciplina: " + disciplina.getName()
+					+ "\nProfessor: " + disciplina.getTeacher();
+		}
 		
 		return result;
 	}
@@ -33,11 +39,11 @@ public class Aluno {
 		this.email = email;
 	}
 
-	public Disciplina getDisciplinas() {
+	public ArrayList<Disciplina> getDisciplinas() {
 		return disciplinas;
 	}
 
-	public void setDisciplinas(Disciplina disciplinas) {
+	public void setDisciplinas(ArrayList<Disciplina> disciplinas) {
 		this.disciplinas = disciplinas;
 	}
 	
