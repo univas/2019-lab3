@@ -40,10 +40,7 @@ public class RunApp {
 		
 		for (int i = 0; i < quantity; i++) {
 			ClientePessoaFisica cli = clientes.get(i);
-			System.out.println("Nome: " + cli.getNome());
-			System.out.println("E-mail: " + cli.getEmail());
-			System.out.println("Telefone: " + cli.getTelefone());
-			System.out.println("CPF: " + cli.getCpf());
+			System.out.println(cli);
 		}
 		
 		System.out.println("Digite a quantidade de clientes pessoa juridica:");
@@ -78,10 +75,7 @@ public class RunApp {
 		
 		for (int i = 0; i < quantity; i++) {
 			ClientePessoaJuridica cli = clientesPJ.get(i);
-			System.out.println("Nome: " + cli.getNome());
-			System.out.println("E-mail: " + cli.getEmail());
-			System.out.println("Telefone: " + cli.getTelefone());
-			System.out.println("CPF: " + cli.getCnpj());
+			System.out.println(cli);
 		}
 	}
 	

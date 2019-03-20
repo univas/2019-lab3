@@ -32,4 +32,11 @@ public class Cliente {
 		this.telefone = telefone;
 	}
 	
+	@Override
+	public String toString() {
+		return "Nome: " + this.nome +
+				"\nE-mail: " + this.email +
+				"\nTelefone: " + this.telefone;
+	}
+	
 }
