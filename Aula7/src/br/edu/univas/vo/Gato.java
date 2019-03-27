@@ -1,7 +1,20 @@
-package br.edu.univas.main;
+package br.edu.univas.vo;
 
 public class Gato extends Animal {
 
+	public Gato(String raca) {
+		super(raca);
+		System.out.println("To no construtor do Gato");
+	}
+	
+	public Gato(String raca, String cor) {
+		super(raca, cor);
+	}
+	
+	public Gato(String raca, String cor, float peso) {
+		super(raca, cor, peso);
+	}
+	
 	public String miar() {
 		String miado = "";
 		

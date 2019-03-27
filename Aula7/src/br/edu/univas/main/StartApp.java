@@ -3,6 +3,10 @@ package br.edu.univas.main;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import br.edu.univas.vo.Animal;
+import br.edu.univas.vo.Cachorro;
+import br.edu.univas.vo.Gato;
+
 public class StartApp {
 
 	public static void main(String[] args) {
@@ -18,17 +22,16 @@ public class StartApp {
 			
 			System.out.println("Digite 0 para cachorro e 1 para gato:");
 			int option = scanner.nextInt();
-			scanner.nextLine();
-			
-			if (option == 0) {
-				animal = new Cachorro();
-			} else {
-				animal = new Gato();
-			}
+			scanner.nextLine();			
 			
 			System.out.println("Digite a raça:");
 			String raca = scanner.nextLine();
-			animal.setRaca(raca);
+			
+			if (option == 0) {
+				animal = new Cachorro(raca);
+			} else {
+				animal = new Gato(raca);
+			}
 			
 			System.out.println("Digite a cor:");
 			String cor = scanner.nextLine();
@@ -44,6 +47,15 @@ public class StartApp {
 		for (int i = 0; i < qtdAnimais; i++) {
 			Animal c = animais.get(i);
 			System.out.println(c);
+
+			if (c instanceof Gato) {
+				Gato g = (Gato) c;
+				g.miar();
+			} else if (c instanceof Cachorro) {
+				Cachorro cc = (Cachorro) c;
+				cc.latir();
+			}
+			
 		}
 		
 	}

@@ -1,4 +1,4 @@
-package br.edu.univas.main;
+package br.edu.univas.vo;
 
 public class Animal {
 	
@@ -6,6 +6,22 @@ public class Animal {
 	private String cor;
 	private float peso;
 
+	public Animal(String raca) {
+		this.raca = raca;
+		System.out.println("To no construtor do Animal!");
+	}
+	
+	public Animal(String raca, String cor) {
+		this.raca = raca;
+		this.cor = cor;
+	}
+	
+	public Animal(String raca, String cor, float peso) {
+		this.raca = raca;
+		this.cor = cor;
+		this.peso = peso;
+	}
+	
 	public String getRaca() {
 		return raca;
 	}
