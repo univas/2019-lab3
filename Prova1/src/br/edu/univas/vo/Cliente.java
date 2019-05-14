@@ -1,9 +1,9 @@
-package br.edu.univas.com;
+package br.edu.univas.vo;
 
 public class Cliente {
 	
 	private int id;
-	private char nome;
+	private String nome;
 
 	public int getId() {
 		return id;
@@ -13,11 +13,11 @@ public class Cliente {
 		this.id = id;
 	}
 
-	public char getNome() {
+	public String getNome() {
 		return nome;
 	}
 
-	public void setNome(char nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 

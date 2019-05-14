@@ -1,4 +1,4 @@
-package br.edu.univas.com;
+package br.edu.univas.vo;
 
 public class ContaCorrente extends Conta {
 

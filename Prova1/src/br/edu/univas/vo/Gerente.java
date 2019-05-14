@@ -1,4 +1,4 @@
-package br.edu.univas.com;
+package br.edu.univas.vo;
 
 import java.util.ArrayList;
 
