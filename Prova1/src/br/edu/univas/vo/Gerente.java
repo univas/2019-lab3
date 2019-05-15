@@ -10,4 +10,12 @@ public class Gerente {
 		contas.add(conta);
 	}
 
+	public ArrayList<Conta> getContas() {
+		return contas;
+	}
+
+	public void setContas(ArrayList<Conta> contas) {
+		this.contas = contas;
+	}
+	
 }
