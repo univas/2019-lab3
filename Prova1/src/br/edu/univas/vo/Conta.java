@@ -1,6 +1,6 @@
 package br.edu.univas.vo;
 
-public abstract class  Conta {
+public abstract class Conta {
 	
 	private int numero;
 	private float saldo;
@@ -10,7 +10,7 @@ public abstract class  Conta {
 	
 	public abstract boolean depositar(float valor);
 	
-	public abstract boolean transferenciaeEletronica(Conta contaDestino  , float valor);
+	public abstract boolean transferenciaEletronica(Conta contaDestino  , float valor);
 	
 	public abstract void atualizarSaldo ();
 	

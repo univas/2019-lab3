@@ -45,7 +45,7 @@ public class StartApp {
 		}
 		
 		System.out.println("Transferindo R$ 102 para Conta da Maria");
-		if (conta1.transferenciaeEletronica(conta2, 102)) {
+		if (conta1.transferenciaEletronica(conta2, 102)) {
 			System.out.println("Transferência efetuada com sucesso!");
 		} else {
 			System.out.println("Saldo insuficiente!");

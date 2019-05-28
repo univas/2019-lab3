@@ -7,13 +7,13 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ContaCorrenteTest {
-
-	private ContaCorrente conta;
+public class ContaPoupancaTest {
+	
+	private ContaPoupanca conta;
 	
 	@Before
 	public void setup() {
-		conta = new ContaCorrente(1, null, 10, 50);		
+		conta = new ContaPoupanca(1, null, 2);		
 	}
 	
 	@Test
@@ -68,7 +68,6 @@ public class ContaCorrenteTest {
 		
 		conta.atualizarSaldo();
 		
-		assertEquals(140, conta.getSaldo(), 0.0);
+		assertEquals(153, conta.getSaldo(), 0.0);
 	}
-	
 }

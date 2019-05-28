@@ -28,7 +28,7 @@ public class ContaCorrente extends Conta {
 	}
 
 	@Override
-	public boolean transferenciaeEletronica(Conta contaDestino, float valor) {
+	public boolean transferenciaEletronica(Conta contaDestino, float valor) {
 		if(valor <= getSaldo() + chequeEspecial) {
 			setSaldo(getSaldo() - valor);
 			contaDestino.setSaldo(contaDestino.getSaldo() + valor);
